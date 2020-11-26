@@ -36,7 +36,7 @@
 	</div>
 	<div class="topnav sticky-top">
 				<c:forEach items="${menuList}" var="menu">
-					<a class="mainmenu"> ${menu.mname} </a>
+					<a class="mainmenu mainmenu"> ${menu.mname} </a>
 				</c:forEach>
 		<div class="loginzone">
 			<button class="btn btn-danger loginbtn" data-toggle="modal"
@@ -44,4 +44,9 @@
 			<button class="btn btn-primary">join</button>
 		</div>
 	</div>
+	<div class="topnav subMenu" id="test">
+	asdsa
+	</div>
 		<%@ include file="loginModal.jsp"%>
+		<%@ include file="/WEB-INF/views/include/header_js.jsp" %>
+</body>
