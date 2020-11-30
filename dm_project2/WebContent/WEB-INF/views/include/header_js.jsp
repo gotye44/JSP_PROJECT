@@ -19,7 +19,7 @@
 		$(".mainmenu").hover(function() {
 			$(this).css("background", "white")
 		}, function() {
-			$(this).css("background", "black")
+			$(this).css("background", "#4c4c4d")
 		})
 	}
 </script>
