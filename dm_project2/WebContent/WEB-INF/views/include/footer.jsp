@@ -19,5 +19,6 @@
 	}
 </script>
 	<% session.removeAttribute("msg"); %>
+<%-- 	<%@ include file="footer_js.jsp" %> --%>
 </body>
 </html>

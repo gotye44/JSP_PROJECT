@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<div class="modal" id="loginModal">
+<div class="modal" id="joinModal">
 	<div class="modal-dialog modal-sm" style="margin-top: 150px;">
-		<div class="modal-content loginmodal-content">
+		<div class="modal-content joinmodal-content">
 
 			<!-- Modal Header -->
-			<div class="modal-header loginmodal-header">Log In</div>
+			<div class="modal-header joinmodal-header">Log In</div>
 
 			<!-- Modal body -->
-			<form action="login.do">
-				<div class="modal-body loginModal-body">
+			<form action="join.do">
+				<div class="modal-body joinModal-body">
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
 							<span class="input-group-text idpw">&nbsp;ID</span>

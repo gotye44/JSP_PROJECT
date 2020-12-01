@@ -29,28 +29,31 @@
 </head>
 <body>
 	<div class="jumbotron jumbotron-fluid mainheader row">
-		<div class="container">
+		<div class="col-sm-3">
+		</div>
+		<div class="container col-sm-6">
 			<h1 class="maintitle">Arent</h1>
 			<p class="subtitle">빠르고 쉬운 계정 공유</p>
+		</div>
+		<div class="col-sm-3 loginzone">
+			<c:if test="${not empty loginUser}">
+			${loginUser.name}님 환영합니다.
+			</c:if>
+			<c:if test="${empty loginUser}">
+				<button class="btn btn-danger loginbtn" data-toggle="modal"
+					data-target="#loginModal">Log In</button>
+				<button class="btn joinbtn" data-toggle="modal" 
+					data-target="#joinModal">join</button>
+			</c:if>
 		</div>
 	</div>
 	<div class="topnav row">
 		<c:forEach items="${menuList}" var="menu">
 			<a class="mainmenu mainmenu"> ${menu.mname} </a>
 		</c:forEach>
-		<div class="loginzone">
-			<c:if test="${not empty loginUser}">
-			${loginUser.name}님 환영합니다.
-			</c:if>
-			<c:if test="${empty loginUser}">
-
-				<button class="btn btn-danger loginbtn" data-toggle="modal"
-					data-target="#loginModal">Log In</button>
-				<button class="btn btn-primary">join</button>
-			</c:if>
-		</div>
 	</div>
 	<div class="topnav subMenu" id="test"></div>
 	<%@ include file="loginModal.jsp"%>
+	<%@ include file="joinModal.jsp"%>
 	<%@ include file="/WEB-INF/views/include/header_js.jsp"%>
 </body>
