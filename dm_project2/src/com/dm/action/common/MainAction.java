@@ -24,17 +24,10 @@ public class MainAction implements Action{
 			throws ServletException, IOException {
 		String url = "/common/main"; 
 		
-		String mCode = request.getParameter("mCode");
-		
-		if(mCode == null) mCode = "M01";
-		
 		List<MenuVO> menuList;
 		try {
-			menuList = menuService.getMainMenuList();
-			MenuVO menu = menuService.getMenuByMcode(mCode);
-			
+			menuList = menuService.getAllMenu();
 			request.setAttribute("menuList", menuList);
-			request.setAttribute("menu", menu);
 		} catch (SQLException e) {
 			e.printStackTrace();
 			url = null;

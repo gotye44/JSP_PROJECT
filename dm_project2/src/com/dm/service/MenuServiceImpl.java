@@ -13,22 +13,22 @@ public class MenuServiceImpl implements MenuService{
 	public void setMenuDAO(MenuDAO menuDAO) {
 		this.menuDAO = menuDAO;
 	}
-	@Override
-	public List<MenuVO> getMainMenuList() throws SQLException {
-		List<MenuVO> menuList = menuDAO.selectMainMenu();
-		return menuList;
-	}
-
-	@Override
-	public List<MenuVO> getSubMenuList(String mCode) throws SQLException {
-		List<MenuVO> menuList = menuDAO.selectSubMenu(mCode);
-		return menuList;
-	}
 
 	@Override
 	public MenuVO getMenuByMcode(String mCode) throws SQLException {
-		MenuVO menu = menuDAO.selectMenuByMcode(mCode);
-		return menu;
+		return null;
+	}
+
+	@Override
+	public List<MenuVO> getAllMenu() throws SQLException {
+		
+		List<MenuVO> mainMenus = menuDAO.selectMainMenu();
+		
+		for(MenuVO menu : mainMenus) {
+			List<MenuVO> subMenus = menuDAO.selectSubMenu(menu.getMcode());
+			menu.setSubMenuList(subMenus);
+		}
+		return mainMenus;
 	}
 
 }

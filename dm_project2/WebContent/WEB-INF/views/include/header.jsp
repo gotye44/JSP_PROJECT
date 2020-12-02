@@ -46,14 +46,20 @@
 			</c:if>
 		</div>
 	</div>
-	<div class="topnav row">
+	<div class="row mainmenubar">
 		<c:forEach items="${menuList}" var="menu">
-			<a class="mainmenu"> ${menu.mname} </a>
+			<div class="dropdown mainmenu">
+				<button class="dropbtn">${menu.mname}</button>
+				<c:if test="${menu.mname ne 'HOME' }">
+					<div class="dropdown-content subMenuList">
+						<c:forEach items="${menu.subMenuList}" var="subM">
+							<a href="<%=request.getContextPath()%>${subM.murl}">${subM.mname}</a>
+						</c:forEach>
+					</div>
+				</c:if>
+			</div>
 		</c:forEach>
-	</div>
-	<div class="topnav subMenuList">
 	</div>
 	<%@ include file="loginModal.jsp"%>
 	<%@ include file="joinModal.jsp"%>
-	<%@ include file="/WEB-INF/views/include/header_js.jsp"%>
 </body>

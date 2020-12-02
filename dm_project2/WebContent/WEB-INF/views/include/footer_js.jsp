@@ -3,4 +3,3 @@
     
 <%@ page trimDirectiveWhitespaces="true" %>
 
-<!-- handlebars -->

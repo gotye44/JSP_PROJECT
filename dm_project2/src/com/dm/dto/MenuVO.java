@@ -1,14 +1,13 @@
 package com.dm.dto;
 
+import java.util.List;
+
 public class MenuVO {
 	private String mcode;
 	private String mname;
 	private String murl;
-	private String micon;
-	private String jtext;
 	private String upcode;
-	private int mlevel;
-	private int isnav;
+	private List<MenuVO> subMenuList;
 	public String getMcode() {
 		return mcode;
 	}
@@ -27,35 +26,17 @@ public class MenuVO {
 	public void setMurl(String murl) {
 		this.murl = murl;
 	}
-	public String getMicon() {
-		return micon;
-	}
-	public void setMicon(String micon) {
-		this.micon = micon;
-	}
-	public String getJtext() {
-		return jtext;
-	}
-	public void setJtext(String jtext) {
-		this.jtext = jtext;
-	}
 	public String getUpcode() {
 		return upcode;
 	}
 	public void setUpcode(String upcode) {
 		this.upcode = upcode;
 	}
-	public int getMlevel() {
-		return mlevel;
+	public List<MenuVO> getSubMenuList() {
+		return subMenuList;
 	}
-	public void setMlevel(int mlevel) {
-		this.mlevel = mlevel;
-	}
-	public int getIsnav() {
-		return isnav;
-	}
-	public void setIsnav(int isnav) {
-		this.isnav = isnav;
+	public void setSubMenuList(List<MenuVO> subMenuList) {
+		this.subMenuList = subMenuList;
 	}
 	
 }

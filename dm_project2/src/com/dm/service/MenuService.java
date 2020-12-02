@@ -6,9 +6,7 @@ import java.util.List;
 import com.dm.dto.MenuVO;
 
 public interface MenuService {
-	List<MenuVO> getMainMenuList()throws SQLException;
-	
-	List<MenuVO> getSubMenuList(String mCode)throws SQLException;
+	List<MenuVO> getAllMenu()throws SQLException;
 	
 	MenuVO getMenuByMcode(String mCode)throws SQLException;
 }
