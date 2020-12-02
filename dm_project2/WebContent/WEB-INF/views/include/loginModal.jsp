@@ -12,13 +12,13 @@
 				<div class="modal-body loginModal-body">
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text idpw">&nbsp;ID</span>
+							<span class="input-group-text idpw" style="background: black;color: navajowhite;">&nbsp;ID</span>
 						</div>
 						<input type="text" class="form-control">
 					</div>
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
-							<span class="input-group-text idpw">PW</span>
+							<span class="input-group-text idpw" style="background: black;color: navajowhite;">PW</span>
 						</div>
 						<input type="text" class="form-control">
 					</div>

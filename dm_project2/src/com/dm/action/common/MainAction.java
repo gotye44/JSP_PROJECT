@@ -26,7 +26,7 @@ public class MainAction implements Action{
 		
 		String mCode = request.getParameter("mCode");
 		
-		if(mCode == null) mCode = "M00";
+		if(mCode == null) mCode = "M01";
 		
 		List<MenuVO> menuList;
 		try {
