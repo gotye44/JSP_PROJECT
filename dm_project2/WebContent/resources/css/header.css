@@ -7,6 +7,10 @@ body, html {
 	background: #262626;
 }
 
+.content-wrapper{
+	height: 700px;
+}
+
 .mainheader {
 	background: black;
 	text-align: center;
