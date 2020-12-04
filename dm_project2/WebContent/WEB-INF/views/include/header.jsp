@@ -53,7 +53,7 @@
 				<c:if test="${menu.mname ne 'HOME' }">
 					<div class="dropdown-content subMenuList">
 						<c:forEach items="${menu.subMenuList}" var="subM">
-							<a href="<%=request.getContextPath()%>${subM.murl}">${subM.mname}</a>
+							<a href="javascript:goPage('${subM.murl}','${subM.mcode }');">${subM.mname}</a>
 						</c:forEach>
 					</div>
 				</c:if>

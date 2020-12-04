@@ -1,14 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<div class="content-wrapper">
-<div class="row">
-<div class="col-lg-12" style="border: 1px solid white;">
-<h1>main page</h1>
-</div>
-</div>
-<div class="row" style="border: 1px solid white;">
-<div class="col-sm-6" style="border: 1px solid white;"></div>
-<div class="col-sm-6" style="border: 1px solid white;"></div>
-</div>
+<div class="wrapper">
+	<div class="content-wrapper">
+		<div id="if_list_div" style="position: relative; padding: 0;overflow: hidden;height: 850px;">
+			<iframe id="if_list" name="if_list" frameborder="0" scrolling="0" src = ""
+					style="position: absolute; top: 0px; left: 0px; bottom: 0px;
+					height: 100%; width: 100%; border: 0px;"></iframe>
+		</div>
+	</div>
 </div>
