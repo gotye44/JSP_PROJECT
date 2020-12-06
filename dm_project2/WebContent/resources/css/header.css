@@ -7,10 +7,6 @@ body, html {
 	background: #262626;
 }
 
-.content-wrapper{
-	height: 700px;
-}
-
 .mainheader {
 	background: black;
 	text-align: center;
@@ -96,6 +92,8 @@ body, html {
 
 
 
+
+
 /* Modal */
 .loginmodal-content{
 	height: 230px;
@@ -165,3 +163,25 @@ body, html {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #b0b0b0; color: black; font-weight: 900}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: black;
+    height: 80px;
+}
+.footer p{
+    text-align: center;
+    padding-top: 28px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}

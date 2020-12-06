@@ -22,6 +22,14 @@
 		<param-name>menuService</param-name>
 		<param-value>com.dm.service.MenuServiceImpl</param-value>
 	</context-param>
+	<context-param>
+		<param-name>rentDAO</param-name>
+		<param-value>com.dm.dao.RentDAOImpl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>rentService</param-name>
+		<param-value>com.dm.service.RentServiceImpl</param-value>
+	</context-param>
 	<listener>
 		<listener-class>com.dm.listener.ApplicationContextLoaderListener</listener-class>
 	</listener>

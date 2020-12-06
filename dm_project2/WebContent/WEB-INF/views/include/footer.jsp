@@ -3,10 +3,8 @@
 
 <%@ page trimDirectiveWhitespaces="true"%>
 
-<div class="jumbotron text-center row" style="margin-bottom: 0">
-	<p>상호명 : 이브레인  대표명 : 노상범  사업자등록번호 : 144-81-32887</p><br>
-	<p>문의 : info@okky.kr 주소 : 서울 강남구 봉은사로 303 TGL경복빌딩 502호 (06103)</p><br> 
-	<p>@ 2020 eBrain Management</p>
+<div class="row footer">
+	<p class="col-12">상호명 : 에이렌트  대표명 : 김동민  사업자등록번호 : 144-81-32887</p>
 </div>
 
 <script

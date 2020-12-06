@@ -11,6 +11,7 @@
 		
 		<typeAlias type="com.dm.dto.MemberVO" alias="member"/>
 		<typeAlias type="com.dm.dto.MenuVO" alias="menu"/>
+		<typeAlias type="com.dm.dto.RentVO" alias="rent"/>
 	</typeAliases>
 	
   <environments default="dev">
@@ -28,6 +29,7 @@
   <mappers>
   	<mapper resource="com/dm/mybatis/mappers/Member-Mapper.xml"/>
   	<mapper resource="com/dm/mybatis/mappers/Menu-Mapper.xml"/>
+  	<mapper resource="com/dm/mybatis/mappers/Rent-Mapper.xml"/>
   </mappers>
 
 </configuration>

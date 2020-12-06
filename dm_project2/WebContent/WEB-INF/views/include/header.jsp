@@ -31,7 +31,7 @@
 	<div class="jumbotron jumbotron-fluid mainheader row">
 		<div class="col-sm-3"></div>
 		<div class="container col-sm-6">
-			<h1 class="maintitle">Arent</h1>
+			<h1 class="maintitle" onclick="location.href='<%=request.getContextPath()%>/main.do'">Arent</h1>
 			<p class="subtitle">빠르고 쉬운 계정 공유</p>
 		</div>
 		<div class="col-sm-3 loginzone">
@@ -49,11 +49,11 @@
 	<div class="row mainmenubar">
 		<c:forEach items="${menuList}" var="menu">
 			<div class="dropdown mainmenu">
-				<button class="dropbtn">${menu.mname}</button>
+				<button class="dropbtn" onclick="goPage('${menu.murl}');">${menu.mname}</button>
 				<c:if test="${menu.mname ne 'HOME' }">
 					<div class="dropdown-content subMenuList">
 						<c:forEach items="${menu.subMenuList}" var="subM">
-							<a href="javascript:goPage('${subM.murl}','${subM.mcode }');">${subM.mname}</a>
+							<a href="javascript:goPage('${subM.murl}');">${subM.mname}</a>
 						</c:forEach>
 					</div>
 				</c:if>
