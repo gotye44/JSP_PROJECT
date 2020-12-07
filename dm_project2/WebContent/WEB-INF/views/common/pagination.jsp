@@ -10,29 +10,19 @@
 <nav aria-label="member list Navigation">
 	<ul class="pagination justify-content-center m-0">
 		<li class="page-item">
-			<a class="page-link" href="javascript:searchList_go(1);">
-				&lt;&lt;
-			</a>
-		</li>
-		<li class="page-item">
-			<a class="page-link" href="javascript:searchList_go(${pageMaker.prev ? pageMaker.startPage-1 : -1});">
-				&lt;
+			<a class="page-link page" href="javascript:searchList_go(${pageMaker.prev ? pageMaker.startPage-1 : -1});">
+				◁
 			</a>
 		</li>
 		<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="pageNum">
 			<li class="page-item <c:out value="${pageMaker.cri.page == pageNum?'active':''}"/>">
-				<a class="page-link" href="javascript:searchList_go(${pageNum});">${pageNum}</a>			
+				<a class="page-link page" href="javascript:searchList_go(${pageNum});">${pageNum}</a>			
 			</li>
 		</c:forEach>
 		<li class="page-item">
-			<a class="page-link" href="javascript:searchList_go(
+			<a class="page-link page" href="javascript:searchList_go(
 			${pageMaker.next ? pageMaker.endPage+1 : -1})">
-				&gt;
-			</a>
-		</li>
-		<li class="page-item">
-			<a class="page-link" href="javascript:searchList_go(${pageMaker.realEndPage})">
-				&gt;&gt;
+				▷
 			</a>
 		</li>
 	</ul>
